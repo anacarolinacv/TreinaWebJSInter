@@ -1,3 +1,3 @@
-# TreinaWEb - JS básico/intermediário
+# TreinaWEb 
 
-## Treinamento de JS
+## repositorio para cursos treinaWEb
