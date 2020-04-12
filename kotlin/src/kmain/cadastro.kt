@@ -23,10 +23,10 @@ fun main() {
     val nomeContato : String;
     val idade : Int;
     //println("Digite o seu nome: ");
-    //val input = Scanner(System.`in`);
+    val input = Scanner(System.`in`);
     //nomeContato = input.nextLine();
     //println("Digite sua idade: ");
-    //idade = input.nextInt();
+    idade = input.nextInt();
     //input.nextLine();
 
     //println(nomeContato);
@@ -40,6 +40,14 @@ fun main() {
     // nao funciona mt bem com inteiros sem condicionar antes
     //nullpoint
 
+    // sinomimo de switch case
+    when(idade) {
+        in 1 .. 17 -> println("Menor de idade");
+        in 18..64 -> println("Já pode ser preso ihu");
+         else -> println("Idoso");
+    }
+
+    
 
 
 }
