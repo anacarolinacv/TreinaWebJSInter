@@ -1,4 +1,4 @@
-const emplate = (function(){
+const Template = (function(){
 
         const listElement = document.querySelector("list");
         const languagueSelect = document.querySelector('#languagetags');
@@ -75,8 +75,12 @@ const Data = (function(){
     function search(event) {
         // tecla enter
         if(event && event.keyCode == 13) {
-
+            const searchQuery = searchInput.value;
+            fetch(`https://github.com/anacarolinacv?tab=repositories?q= $(searchQuery)`)
+            .then(response => response.json())
+            .then(response => response.itens)
+            .then($.setList);
         }
     }
 
-})()
+})(Template);
